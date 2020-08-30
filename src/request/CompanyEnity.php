@@ -3,7 +3,7 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 30.08.20 22:22:00
+ * @version 31.08.20 00:09:12
  */
 
 declare(strict_types = 1);
@@ -15,7 +15,7 @@ use dicr\helper\JsonEntity;
 /**
  * Информация о статусе доступности компании.
  */
-class CompanyState extends JsonEntity
+class CompanyEnity extends JsonEntity
 {
     /**
      * @var string алиас компании ("dellintk")

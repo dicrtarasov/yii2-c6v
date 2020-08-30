@@ -3,7 +3,7 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 30.08.20 22:22:27
+ * @version 31.08.20 00:09:12
  */
 
 declare(strict_types = 1);
@@ -33,7 +33,7 @@ class GetPingService extends C6VRequest
 
     /**
      * @inheritDoc
-     * @return CompanyState[] информация о состоянии доступности транспортных компаний
+     * @return CompanyEnity[] информация о состоянии доступности транспортных компаний
      */
     public function send() : array
     {
@@ -48,7 +48,7 @@ class GetPingService extends C6VRequest
         }
 
         return array_map(static function (array $data) {
-            return new CompanyState([
+            return new CompanyEnity([
                 'json' => $data
             ]);
         }, $data);

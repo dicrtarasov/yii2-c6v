@@ -3,13 +3,13 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 30.08.20 23:19:44
+ * @version 31.08.20 00:09:12
  */
 
 declare(strict_types = 1);
 namespace dicr\c6v;
 
-use dicr\c6v\request\CompanyState;
+use dicr\c6v\request\CompanyEnity;
 use dicr\c6v\request\CurrectCity;
 use dicr\c6v\request\DeliveryEntity;
 use dicr\c6v\request\GetCities;
@@ -254,7 +254,7 @@ class C6VApi extends Component
     /**
      * Запрос состояния доступности транспортных компаний.
      *
-     * @return CompanyState[]
+     * @return CompanyEnity[]
      * @throws Exception
      */
     public function getPingServiceResult() : array

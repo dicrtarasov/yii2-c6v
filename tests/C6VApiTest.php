@@ -3,13 +3,13 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 31.08.20 00:03:43
+ * @version 31.08.20 00:09:12
  */
 
 declare(strict_types = 1);
 namespace dicr\c6v;
 
-use dicr\c6v\request\CompanyState;
+use dicr\c6v\request\CompanyEnity;
 use dicr\c6v\request\DeliveryEntity;
 use PHPUnit\Framework\TestCase;
 use Yii;
@@ -122,6 +122,6 @@ class C6VApiTest extends TestCase
         $ret = self::api()->getPingServiceResult();
         self::assertIsArray($ret);
         self::assertArrayHasKey(0, $ret);
-        self::assertInstanceOf(CompanyState::class, $ret[0]);
+        self::assertInstanceOf(CompanyEnity::class, $ret[0]);
     }
 }
