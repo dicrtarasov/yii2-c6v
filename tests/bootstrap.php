@@ -3,7 +3,7 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 31.08.20 00:29:00
+ * @version 31.08.20 03:23:55
  */
 
 /** @noinspection PhpUnhandledExceptionInspection */
@@ -25,11 +25,6 @@ new yii\console\Application([
         'cache' => yii\caching\ArrayCache::class,
         'urlManager' => [
             'hostInfo' => 'https://dicr.org'
-        ],
-        'log' => [
-            'targets' => [
-                'console' => dicr\log\ConsoleTarget::class
-            ]
         ],
         'c6v' => [
             'class' => dicr\c6v\C6VApi::class,
