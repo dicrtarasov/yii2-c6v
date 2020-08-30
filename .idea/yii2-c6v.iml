@@ -13,7 +13,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dicr/yii2-helper" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dicr/yii2-http" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/dicr/yii2-log" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dicr/yii2-validate" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/ezyang/htmlpurifier" />
