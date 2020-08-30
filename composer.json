@@ -1,0 +1,49 @@
+{
+    "name": "dicr/yii2-c6v",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "homepage": "https://gitlab.com/dicr/yii2-c6v",
+    "description": "API доставки c6v.ru для Yii2",
+    "keywords": ["dicr", "yii2", "delivery", "c6v"],
+    "authors": [
+        {
+            "name": "Igor A Tarasov",
+            "email": "develop@dicr.org",
+            "homepage": "http://dicr.org",
+            "role": "developer"
+        }
+    ],
+    "support": {
+        "source": "https://gitlab.com/dicr/yii2-c6v.git"
+    },
+    "autoload": {
+        "psr-4": {
+            "dicr\\c6v\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "dicr\\c6v\\": "tests/"
+        }
+    },
+    "minimum-stability": "RC",
+    "prefer-stable": true,
+    "require": {
+        "php": "~7.2",
+        "ext-json": "*",
+        "yiisoft/yii2": "~2.0",
+        "dicr/yii2-helper": "~3.5",
+        "dicr/yii2-http": "~2.1",
+        "dicr/yii2-validate": "~2.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "~9.3",
+        "dicr/yii2-log": "~1.0"
+    },
+    "repositories": [
+        {"type": "git", "url": "https://gitlab.com/dicr/yii2-http.git"},
+        {"type": "git", "url": "https://gitlab.com/dicr/yii2-validate.git"},
+        {"type": "composer", "url": "https://asset-packagist.org"}
+    ]
+}
