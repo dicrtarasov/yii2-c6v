@@ -3,16 +3,13 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 30.08.20 23:49:31
+ * @version 31.08.20 00:29:00
  */
 
 /** @noinspection PhpUnhandledExceptionInspection */
 declare(strict_types = 1);
 
 /** @var string */
-
-use yii\log\Dispatcher;
-
 define('YII_ENV', 'dev');
 
 /** @var bool */
@@ -30,7 +27,6 @@ new yii\console\Application([
             'hostInfo' => 'https://dicr.org'
         ],
         'log' => [
-            'class' => Dispatcher::class,
             'targets' => [
                 'console' => dicr\log\ConsoleTarget::class
             ]

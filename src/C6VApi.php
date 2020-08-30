@@ -3,13 +3,13 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 31.08.20 00:09:12
+ * @version 31.08.20 00:29:55
  */
 
 declare(strict_types = 1);
 namespace dicr\c6v;
 
-use dicr\c6v\request\CompanyEnity;
+use dicr\c6v\request\CompanyEntity;
 use dicr\c6v\request\CurrectCity;
 use dicr\c6v\request\DeliveryEntity;
 use dicr\c6v\request\GetCities;
@@ -31,8 +31,8 @@ use function array_merge;
  * API агрегатора доставки.
  *
  * @property-read CachingClient $httpClient клиент HTTP
- *
  * @link https://c6v.ru/api
+ * @noinspection MissingPropertyAnnotationsInspection
  */
 class C6VApi extends Component
 {
@@ -254,7 +254,7 @@ class C6VApi extends Component
     /**
      * Запрос состояния доступности транспортных компаний.
      *
-     * @return CompanyEnity[]
+     * @return CompanyEntity[]
      * @throws Exception
      */
     public function getPingServiceResult() : array
